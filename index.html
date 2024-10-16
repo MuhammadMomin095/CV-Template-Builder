@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 5 Template</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic' rel='stylesheet' type='text/css'>
+
+  <!-- MAIN CONTAINER -->
+  <div id="main_container">
+
+    <!-- HEADER -->
+    <div id="header">
+      <div class="header_logotype_container">
+        <h1 class="logotype_name"> Muhammad Momin <span class="purple"></span></h1>
+        <br>
+        <h2 class="logotype_occupation">Frontend Web Developer</h2>
+        
+      </div>
+      <div class="header_menu_container">
+        <div class="clear"></div>
+        <ul class="header_menu horizontal_list">
+          <li><a class="no_border purple" href="#">Profile</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#work-experience">Work Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="left_col">
+      <br>
+      <div class="profile_frame">
+        <div class="profile_picture"></div>
+      </div>
+      <div class="hello_content">
+        <h2>Hello!</h2>
+        <p>I am Muhammad Momin, a passionate web developer with 1 to 1.5 years of experience.
+          I specialize in HTML, CSS, TypeScript, JavaScript, and Next.js. My goal is to leverage
+           my skills in front-end technologies to deliver efficient and responsive web solutions.</p>
+      </div>
+
+      <div class="contact_details_content">
+        <h2>Contact details</h2>
+        <p class="purple">Phone:</p>
+        <p>0315 2309503</p>
+        <p class="purple">Email:</p>
+        <p>mominshykh7@gmail.com</p>
+        <p class="purple">Address:</p>
+        <p>Pakistan, Karachi</p>
+      </div>
+
+      <div class="get_social_content">
+        <h2>Get social</h2>
+        <ul class="fontawesome-double-angle-right">
+          <li><a class="facebook" href=https://www.facebook.com/mominshykh.xx>
+              <span class="invisible">Facebook</span></a></li>
+          <li><a class="instagram" href=https://www.instagram.com/mominshykh/?hl=en>
+              <span class="invisible">Instagram</span></a></li>
+          <li><a class="linkedin" href=https://www.linkedin.com/in/muhammad-momin-62069b2b9/>
+              <span class="invisible">LinkedIn</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PROFILE CONTENT -->
+    <div id="content_container">
+      <div class="block">
+        <h1>Profile</h1>
+        <blockquote class="profile_quote">
+          <p>"As a web developer, I believe in turning ideas into digital reality. With a blend of
+            creativity and technical expertise in HTML, CSS, TypeScript, JavaScript, and Next.js, 
+            I aim to build seamless user experiences that not only meet but exceed expectations."</p>
+          <p>Muhammad Momin</p>
+          <div class="container">
+            <button id="toggle-skills-btn">Toggle Skills</button>
+            <button id="toggle-education-btn">Toggle Education</button>
+            <!-- Skills Section -->
+            <div id="skills" class="section">
+              <h2>Skills</h2>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>Next.js</li>
+              </ul>
+            </div>
+            <!-- Education Section -->
+            <div id="education" class="section">
+              <h2>Education</h2>
+              <ul>
+                <li>Matric</li>
+                <li>Intermediate</li>
+              </ul>
+            </div>
+            <!-- Work Experience Section -->
+            <div id="work-experience" class="section">
+              <h2>Work Experience</h2>
+              <ul>
+                <li>1 to 1.5 years of experience in web development</li>
+              </ul>
+            </div>
+            <!-- Projects Section -->
+            <div id="projects" class="section">
+              <h2>Projects</h2>
+              <ul>
+                <li>Currency Converter Website - Built using HTML, CSS, TypeScript, and JavaScript</li>
+                <li>Showroom Website - Built using HTML and CSS</li>
+              </ul>
+            </div>
+          </div>
+        </blockquote>
+      </div>
+
+      <div class="block">
+        <h2>A few words about me</h2>
+        <p>"Innovative Full-Stack Developer with expertise in TypeScript, JavaScript, HTML,
+          and CSS. Passionate about building high-quality, scalable web applications that deliver
+          exceptional user experiences."</p>
+      </div>
+
+      <div class="horizontal_line">
+        <div class="line_left"></div>
+        <div class="left_circle"></div>
+        <div class="central_circle"></div>
+        <div class="right_circle"></div>
+        <div class="line_right"></div>
+      </div>
+
+      <div class="last block">
+        <h2>Interests & Hobbies</h2>
+        <p>I'm passionate about technology and human behavior, both determine almost all my interests
+          and hobbies:</p>
+        <ul>
+          <li>Visiting new places</li>
+          <li>Meeting people</li>
+          <li>Having new experiences</li>
+          <li>Table Tennis</li>
+          <li>Web Developing</li>
+          <li>Anime</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+    <!-- FOOTER -->
+    <div id="footer">
+      <p class="footer_name">Muhammad Momin CV 2024</p>
+    </div>
+  </div>
+
+  <form id="resume-form">
+    <h3>Dynamic Resume Builder</h3>
+
+    <!-- Personal Information -->
+    <h4>Personal Information</h4>
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+  
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" placeholder="Enter your phone number" required>
+
+    <!-- Skills Section -->
+    <div class="section" id="skills-section">
+        <h2>Skills</h2>
+        <button type="button" id="toggle-skills-form">Toggle Skills</button>
+        <input type="text" id="skills-input" placeholder="Enter skills (comma separated)">
+        <button type="button" id="add-skills">Add Skills</button>
+        <div id="skills-list"></div>
+        <button type="button" id="edit-skills">Edit Skills</button>
+    </div>
+
+    <!-- Education Section -->
+    <div class="section" id="education-section">
+        <h2>Education</h2>
+        <button type="button" id="toggle-education-form">Toggle Education</button>
+        <textarea id="education-input" placeholder="Enter education details"></textarea>
+        <button type="button" id="add-education">Add Education</button>
+        <div id="education-list"></div>
+        <button type="button" id="edit-education">Edit Education</button>
+    </div>
+
+    <!-- Work Experience Section -->
+    <h4>Work Experience</h4>
+    <label for="experience">Work Experience Details:</label>
+    <input type="text" id="experience" placeholder="Enter your experience" required>
+
+    <!-- Submit Buttons -->
+    <div class="button-container">
+        <button type="button" id="generate-resume">Generate Resume</button>
+        <button type="button" id="share-link">Share Link</button>
+        <button type="button" id="download-pdf">Download PDF</button>
+    </div>
+</form>
+
+<!-- Resume Display Section -->
+<div id="resumeDisplay"></div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
